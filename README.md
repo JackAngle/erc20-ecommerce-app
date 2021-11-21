@@ -8,9 +8,9 @@ Follow EatTheBlock's tutorial in 2020 & update source code to newest Metamask's 
 The following assumes the use of `node@>=10`.
 
 ## Dependencies
-`truflle` v5.4.2 - a development framework for Ethereum
-`Ganache` - ONE CLICK BLOCKCHAIN
-`"@openzeppelin/contracts": "^4.3.3"`
+- `truflle` v5.4.2 - a development framework for Ethereum
+- `Ganache` - ONE CLICK BLOCKCHAIN
+- `"@openzeppelin/contracts": "^4.3.3"`
 
 ## Install Dependencies
 
