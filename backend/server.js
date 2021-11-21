@@ -7,10 +7,15 @@ const { Payment } = require('./db.js');
 
 const app = new Koa();
 const router = new Router();
-const items = {
-    '1': {id: 1, url: 'http://UrlToDownloadItem1'},
-    '2': {id: 2, url: 'http://UrlToDownloadItem2'},
-}
+// const items = {
+//     '1': {id: 1, url: 'http://UrlToDownloadItem1'},
+//     '2': {id: 2, url: 'http://UrlToDownloadItem2'},
+// }
+
+let items = {};
+for (let i = 0; i < 9; i++) {
+    items[`${i+1}`] = {id: i+1, url: `http://UrlToDownloadItem${i+1}`};
+} 
 
 router.get ('/api/getPaymentId/:itemId', async ctx => {
     const paymentId = (Math.random() * 10000).toFixed(0);
